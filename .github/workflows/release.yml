@@ -23,7 +23,7 @@ jobs:
     if: ${{ needs.release.outputs.releases_created == 'true'  }}
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5
       - uses: actions/setup-node@v4
         with:
           node-version: "18"
